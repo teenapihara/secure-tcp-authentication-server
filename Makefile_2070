@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -Wall -g
+TARGET = server_2070
+
+all: $(TARGET)
+
+$(TARGET): server_2070.c
+	$(CC) $(CFLAGS) server_2070.c -o $(TARGET)
+
+clean:
+	rm -f $(TARGET) *.log
